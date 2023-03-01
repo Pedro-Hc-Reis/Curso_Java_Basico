@@ -1,6 +1,6 @@
 package aula24;
 
-public class Exer01 {
+public class ex1 {
 
     public static  void main(String[] args){
 
