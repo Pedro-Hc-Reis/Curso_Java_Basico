@@ -2,10 +2,10 @@ package aula24;
 
 public class LivroLivraria {
 
-        String nome;
-        String autor;
+        public String nome;
+        public String autor;
         int qtdPaginas;
-        int anoLancamento;
+        public int anoLancamento;
         String isbn;
-        double preco;
+        public double preco;
 }

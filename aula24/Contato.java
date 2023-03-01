@@ -2,8 +2,8 @@ package aula24;
 
 public class Contato {
 
-    String nome;
-    String email;
-    String endereco;
-    String[] telefones;
+    public String nome;
+    public String email;
+    public String endereco;
+    public String[] telefones;
 }

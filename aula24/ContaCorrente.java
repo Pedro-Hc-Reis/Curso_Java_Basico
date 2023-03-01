@@ -2,9 +2,9 @@ package aula24;
 
 public class ContaCorrente {
 
-    String numero;
-    String agencia;
-    boolean especial;
-    double limiteEspecial;
-    double saldo;
+    public String numero;
+    public String agencia;
+    public boolean especial;
+    public double limiteEspecial;
+    public double saldo;
 }

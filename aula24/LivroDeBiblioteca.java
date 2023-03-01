@@ -4,13 +4,13 @@ import java.util.Date;
 
 public class LivroDeBiblioteca {
 
-    String nome;
-    String autor;
+    public String nome;
+    public String autor;
     int qtdPaginas;
-    int anoLancamento;
+    public int anoLancamento;
     String isbn;
 
-    boolean emprestado;
-    Date dataEntrega;
-    String emprestadoA;
+    public boolean emprestado;
+    public Date dataEntrega;
+    public String emprestadoA;
 }
