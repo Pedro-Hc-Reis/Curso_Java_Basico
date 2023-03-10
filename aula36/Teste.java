@@ -1,0 +1,56 @@
+package aula36;
+
+public class Teste {
+
+    public static void main(String[]args){
+
+        Contato contato = new Contato();
+        contato.setNome("Pedro");
+        //contato.setEndereco("XXXXX XXXX");
+        //contato.setTelefone("19 99999-9999");
+
+        Endereco end = new Endereco();
+        end.setNomeRua("xxxxxxxxx");
+        end.setNumero("22");
+        end.setComplemento("-");
+        end.setCidade("Valinhos");
+        end.setEstado("SP");
+        end.setCep("xxxx-xxx");
+
+        contato.setEndereco(end);
+
+        Telefone telefone = new Telefone();
+        telefone.setTipo("celular");
+        telefone.setDdd("19");
+        telefone.setNumero("99999-9999");
+
+        Telefone telefone2 = new Telefone();
+        telefone2.setTipo("casa");
+        telefone2.setDdd("11");
+        telefone2 .setNumero("99999-9999");
+
+        Telefone[] telefones = new Telefone[2];
+        telefones[0] = telefone;
+        telefones[1] = telefone2;
+
+        contato.setTelefones(telefones);
+
+        System.out.println(contato.getNome());
+
+        if(contato != null && contato.getEndereco() != null){
+            System.out.println(contato.getEndereco().getCidade());
+        }
+
+        /*
+        if (contato != null && contato.getTelefone() != null){
+            System.out.println(contato.getTelefone().getDdd() + " " + contato.getTelefone().getNumero());
+        }
+         */
+
+        if(contato != null && contato.getTelefones() != null){
+            for (Telefone t : contato.getTelefones()){
+                System.out.println(t.getDdd() + " " + t.getNumero());
+            }
+        }
+    }
+}
